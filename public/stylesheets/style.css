@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /************   GENERAL RULES    ***************/
 
 .pages-body {
@@ -13,11 +14,6 @@
     width: 1140px;
     height: 100vh;
     background-color: #EEE;
-    
-}
-#home-container,
-#about-container,
-#works-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -53,11 +49,13 @@
     color: #FFF;
 }
 .main-container {
-    width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+.main-container a {
+    text-decoration: none;
 }
 .main-container h1 {
     text-align: center;
@@ -76,7 +74,12 @@
     justify-content: center;
     box-shadow: 0px 0px 10px #888888;
 }
+
 /*************   HOME RULES   *************/
+
+.main-container {
+    width: 450px;
+}
 
 /*************   ABOUT RULES   *************/
 
@@ -94,4 +97,45 @@
     max-width: 570px;
     font-size: 23pt;
     line-height: 1,5px;
+}
+
+/*************   WORKS RULES   *************/
+
+#works-container .main-container {
+    width: 800px;
+    font-size: 22px;
+}
+#works-container .main-container h2  {
+    font-size: 250%;
+    margin: 25px 0;
+}
+#works-container .main-container ul {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*************   GALLERY RULES   *************/
+
+#gallery-container main {
+    width: 100%;
+    padding: 10px 25px 25px 25px;
+}
+
+#gallery-container main h1 {
+    margin-bottom: 10px;
+}
+
+#images-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#images-container p {
+    margin-top: 3px;
+    margin-bottom: 10px;
+
 }
