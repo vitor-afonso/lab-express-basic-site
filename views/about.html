@@ -5,25 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albert Einstein - About</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-<body>
+<body class="pages-body">
     <div id="about-container" class="body-container">
         <header>
-            <ul>
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Works</li></a>
-                <a href="#"><li>Gallery</li></a>
-                <a href="#"><li>About</li></a>
+            <ul class="nav-bar">
+                <a href="http://localhost:3000/home"><li>Home</li></a>
+                <a href="http://localhost:3000/about" class="selected"><li>About</li></a>
+                <a href="http://localhost:3000/works"><li>Works</li></a>
+                <a href="http://localhost:3000/gallery"><li>Gallery</li></a>
             </ul>
         </header>
-        <main id="main-container">
-            <div id="img-container">
-                <img src="/images/einstein.jpeg" width="300" height="auto" alt="Einstein photo">
+        <main class="main-container">
+            <h1>The Dopey One</h1>
+            <div id="info-container">
+                <img src="/images/einstein-about.jpeg" width="auto" height="360" alt="Einstein photo">
+                <article id="description">
+                    <p>"The Dopey One" a.k.a. Albert Einstein (1879 - 1955) was a physicist who developed the special and general theories of relativity and won the Nobel Prize for Physics in 1921 for his explanation of the photoelectric effect. <br> <br> Einstein is generally considered the most influential physicist of the 20th century. Read more <a href="https://en.wikipedia.org/wiki/Albert_Einstein"> here</a>.</p>
+                </article>
             </div>
-            <article id="description">
-                <p> Albert Einstein, (born March 14, 1879, Ulm, Württemberg, Germany—died April 18, 1955, Princeton, New Jersey, U.S.), German-born physicist who developed the special and general theories of relativity and won the Nobel Prize for Physics in 1921 for his explanation of the photoelectric effect. Einstein is generally considered the most influential physicist of the 20th century. Read more <a href="https://en.wikipedia.org/wiki/Albert_Einstein"> here</a>.</p>
-            </article>
-
         </main>
         <footer><small>Made by Vitor A. &copy; Ironhack Lisbon 2022</small></footer>
     </div>
